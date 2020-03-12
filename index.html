@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Roulette FFA</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body onload="showRules()">
+    <div id="wheel-container">
+      <div id="wheel">
+        <h1>Current Wheel:</h1>
+        <h2 id="currentWheel">Default</h2>
+        <button onclick="ranWheel()">Randomize Wheel</button>
+        <button onclick="ranCards()" id="ranCard">Randomize Cards</button>
+      </div>
+    </div>
+    <div id="trainer1">
+
+      <img id="pkmn1" class="pkmnBoxLeft" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn2" class="pkmnBoxLeft" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn3" class="pkmnBoxLeft" src="images/temp.png" onclick="startRoll(this)">
+
+      <h2 id="trainerName1" class="nameLeft"></h2>
+      <input type="text" id="nameEntry1" class="nameEntryLeft" placeholder="Enter Name Here" onkeypress="enterName(this)">
+
+      <h2 id="card1" class="nameLeft">Card [ ] </h2>
+    </div>
+    <div id="trainer2">
+      <img id="pkmn4" class="pkmnBoxRight" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn5" class="pkmnBoxRight" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn6" class="pkmnBoxRight" src="images/temp.png" onclick="startRoll(this)">
+
+      <input type="text" id="nameEntry2" class="nameEntryRight" placeholder="Enter Name Here" onkeypress="enterName(this)">
+      <h2 id="trainerName2" class="nameRight"></h2>
+      <h2 id="card2" class="nameRight">[ ] Card </h2>
+    </div>
+    <div id="trainer3">
+      <img id="pkmn7" class="pkmnBoxLeft" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn8" class="pkmnBoxLeft" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn9" class="pkmnBoxLeft" src="images/temp.png" onclick="startRoll(this)">
+
+      <input type="text" id="nameEntry3" class="nameEntryLeft" placeholder="Enter Name Here" onkeypress="enterName(this)">
+      <h2 id="trainerName3" class="nameLeft"></h2>
+      <h2 id="card3" class="nameLeft">Card [ ] </h2>
+    </div>
+    <div id="trainer4">
+      <img id="pkmn10" class="pkmnBoxRight" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn11" class="pkmnBoxRight" src="images/temp.png" onclick="startRoll(this)">
+      <img id="pkmn12" class="pkmnBoxRight" src="images/temp.png" onclick="startRoll(this)">
+
+      <input type="text" id="nameEntry4" class="nameEntryRight" placeholder="Enter Name Here" onkeypress="enterName(this)">
+      <h2 id="trainerName4" class="nameRight"></h2>
+      <h2 id="card4" class="nameRight">[ ] Card </h2>
+    </div>
+  </body>
+</html>
